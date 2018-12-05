@@ -7,19 +7,19 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="改善deep NN : week1,assignment11.神经网络中需要初始化的两种参数类型为 2.三种初始化参数的方法###1) 零初始化 ###2) ranndom初始化 ###3) He初始化 3.零初始化###1) 具体操作  W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float) b = np.zeros((layers">
+  <meta name="description" content="改善deep NN : week1,assignment11.神经网络中需要初始化的两种参数类型为 2.三种初始化参数的方法1) 零初始化2) ranndom初始化3) He初始化3.零初始化1) 具体操作 W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float) b = np.zeros((layers_dims[l],1),dtyp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/12/05/1.Initialization_kzw/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="改善deep NN : week1,assignment11.神经网络中需要初始化的两种参数类型为 2.三种初始化参数的方法###1) 零初始化 ###2) ranndom初始化 ###3) He初始化 3.零初始化###1) 具体操作  W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float) b = np.zeros((layers">
+<meta property="og:description" content="改善deep NN : week1,assignment11.神经网络中需要初始化的两种参数类型为 2.三种初始化参数的方法1) 零初始化2) ranndom初始化3) He初始化3.零初始化1) 具体操作 W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float) b = np.zeros((layers_dims[l],1),dtyp">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://i.imgur.com/CcdQPWx.jpg">
 <meta property="og:image" content="https://i.imgur.com/OK5uvEO.jpg">
-<meta property="og:updated_time" content="2018-12-05T08:40:18.879Z">
+<meta property="og:updated_time" content="2018-12-05T11:11:42.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="改善deep NN : week1,assignment11.神经网络中需要初始化的两种参数类型为 2.三种初始化参数的方法###1) 零初始化 ###2) ranndom初始化 ###3) He初始化 3.零初始化###1) 具体操作  W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float) b = np.zeros((layers">
+<meta name="twitter:description" content="改善deep NN : week1,assignment11.神经网络中需要初始化的两种参数类型为 2.三种初始化参数的方法1) 零初始化2) ranndom初始化3) He初始化3.零初始化1) 具体操作 W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float) b = np.zeros((layers_dims[l],1),dtyp">
 <meta name="twitter:image" content="https://i.imgur.com/CcdQPWx.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -80,40 +80,30 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="改善deep-NN-week1-assignment1"><a href="#改善deep-NN-week1-assignment1" class="headerlink" title="改善deep NN : week1,assignment1"></a>改善deep NN : week1,assignment1</h1><h2 id="1-神经网络中需要初始化的两种参数类型为"><a href="#1-神经网络中需要初始化的两种参数类型为" class="headerlink" title="1.神经网络中需要初始化的两种参数类型为"></a>1.神经网络中需要初始化的两种参数类型为</h2><p><img src="https://i.imgur.com/CcdQPWx.jpg" alt=""></p>
-<h2 id="2-三种初始化参数的方法"><a href="#2-三种初始化参数的方法" class="headerlink" title="2.三种初始化参数的方法"></a>2.三种初始化参数的方法</h2><p>###1) 零初始化</p>
-<p>###2) ranndom初始化</p>
-<p>###3) He初始化</p>
-<h2 id="3-零初始化"><a href="#3-零初始化" class="headerlink" title="3.零初始化"></a>3.零初始化</h2><p>###1) 具体操作</p>
-<ul>
+<h2 id="2-三种初始化参数的方法"><a href="#2-三种初始化参数的方法" class="headerlink" title="2.三种初始化参数的方法"></a>2.三种初始化参数的方法</h2><h3 id="1-零初始化"><a href="#1-零初始化" class="headerlink" title="1) 零初始化"></a>1) 零初始化</h3><h3 id="2-ranndom初始化"><a href="#2-ranndom初始化" class="headerlink" title="2) ranndom初始化"></a>2) ranndom初始化</h3><h3 id="3-He初始化"><a href="#3-He初始化" class="headerlink" title="3) He初始化"></a>3) He初始化</h3><h2 id="3-零初始化"><a href="#3-零初始化" class="headerlink" title="3.零初始化"></a>3.零初始化</h2><h3 id="1-具体操作"><a href="#1-具体操作" class="headerlink" title="1) 具体操作"></a>1) 具体操作</h3><ul>
 <li>W = np.zeros((layers_dims[l],layers_dims[l-1]),dtype=float)</li>
 <li>b = np.zeros((layers_dims[l],1),dtype=float)</li>
 </ul>
-<p>###2) 实验结果,结论</p>
-<ul>
+<h3 id="2-实验结果-结论"><a href="#2-实验结果-结论" class="headerlink" title="2) 实验结果,结论"></a>2) 实验结果,结论</h3><ul>
 <li>结果很糟糕,accuracy=0.5,网络并没有学到东西</li>
 <li>一般情况下，初始化所有权值为零会导致网络不能打破对称性。这意味着每一层的每个神经元都会学到同样的东西</li>
 <li>** 权重W应该随机初始化来打破对称性</li>
 <li>**偏置b可以初始化为零,只要W打破了对称性</li>
 </ul>
-<h2 id="4-ranndom初始化-值较大时"><a href="#4-ranndom初始化-值较大时" class="headerlink" title="4.ranndom初始化,值较大时"></a>4.ranndom初始化,值较大时</h2><p>###1) 具体操作</p>
-<ul>
+<h2 id="4-ranndom初始化-值较大时"><a href="#4-ranndom初始化-值较大时" class="headerlink" title="4.ranndom初始化,值较大时"></a>4.ranndom初始化,值较大时</h2><h3 id="1-具体操作-1"><a href="#1-具体操作-1" class="headerlink" title="1) 具体操作"></a>1) 具体操作</h3><ul>
 <li>W = np.random.randn(layers_dims[l],layers_dims[l-1])*10</li>
 <li>b = np.zeros((layers_dims[l],1),dtype=float)</li>
 </ul>
-<p>###2) 实验结果,结论</p>
-<ul>
+<h3 id="2-实验结果-结论-1"><a href="#2-实验结果-结论-1" class="headerlink" title="2) 实验结果,结论"></a>2) 实验结果,结论</h3><ul>
 <li>结果较好,accuracy=0.86</li>
 <li>当随机初始化的参数值较大时,网络表现不是很好,建议将10换成0.01</li>
 </ul>
-<h2 id="5-He初始化"><a href="#5-He初始化" class="headerlink" title="5.He初始化"></a>5.He初始化</h2><p>###1)条件 : 使用ReLU激活函数</p>
-<p>###2)系数图解<br><img src="https://i.imgur.com/OK5uvEO.jpg" alt=""></p>
-<p>###3) 具体操作</p>
-<ul>
+<h2 id="5-He初始化"><a href="#5-He初始化" class="headerlink" title="5.He初始化"></a>5.He初始化</h2><h3 id="1-条件-使用ReLU激活函数"><a href="#1-条件-使用ReLU激活函数" class="headerlink" title="1)条件 : 使用ReLU激活函数"></a>1)条件 : 使用ReLU激活函数</h3><h3 id="2-系数图解"><a href="#2-系数图解" class="headerlink" title="2)系数图解"></a>2)系数图解</h3><p><img src="https://i.imgur.com/OK5uvEO.jpg" alt=""></p>
+<h3 id="3-具体操作"><a href="#3-具体操作" class="headerlink" title="3) 具体操作"></a>3) 具体操作</h3><ul>
 <li>W = np.random.randn(layers_dims[l],layers_dims[l-1])*np.sqrt(2/layers_dims[l-1])</li>
 <li>b = np.zeros((layers_dims[l],1),dtype=float)</li>
 </ul>
-<p>###4) 实验结果,结论</p>
-<ul>
+<h3 id="4-实验结果-结论"><a href="#4-实验结果-结论" class="headerlink" title="4) 实验结果,结论"></a>4) 实验结果,结论</h3><ul>
 <li>结果很不错,accuracy=0.96</li>
 </ul>
 <h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6.总结"></a>6.总结</h2><ul>
@@ -126,7 +116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/05/1.Initialization_kzw/" data-id="cjpb2e5hz00007wg6orxu8k67" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/05/1.Initialization_kzw/" data-id="cjpb2otj10002ikg61va5jukr" class="article-share-link">Share</a>
       
       
     </footer>
